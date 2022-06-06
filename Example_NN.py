@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import pandas as pd
-from tensorflow import keras
-import tensorflow as tf
+## Written for Python 3.6.9
+import pandas as pd ## Using Pandas 1.1.5
+from tensorflow import keras ## Tensorflow 1.14.0
+import tensorflow as tf 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import roc_curve, auc
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt ## matplotlib 3.3.0
 
 cnames = ['truth','pTl1','etal1','phil1','pTl2','etal2','phil2','MET','METphi','MET_rel','axialMET',
           'M_R','M_TR_2', 'R','MT2','S_R','M_Delta_R','dPhi_r_b', 'cos(theta_r1)']
